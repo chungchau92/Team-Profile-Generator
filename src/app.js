@@ -1,4 +1,4 @@
-const inquire = require("inquire")
+const inquirer = require("inquirer")
 
 const managerQuestion = [
     {
@@ -25,7 +25,7 @@ const managerQuestion = [
         type: 'list',
         name: 'option',
         message: 'add an engineer or an intern or to finish building a team',
-        choice : [' add an engineer','add an intern','finish']
+        choices : ['add an engineer','add an intern','finish']
     }
 ]
 
@@ -54,7 +54,7 @@ const engineerQuestion = [
         type: 'list',
         name: 'option',
         message: 'add an engineer or an intern or to finish building a team',
-        choice : [' add an engineer','add an intern','finish']
+        choices : [' add an engineer','add an intern','finish']
     }
 ]
 
@@ -83,7 +83,7 @@ const internQuestion = [
         type: 'list',
         name: 'option',
         message: 'add an engineer or an intern or to finish building a team',
-        choice : [' add an engineer','add an intern','finish']
+        choices : [' add an engineer','add an intern','finish']
     }
 ]
 
@@ -91,6 +91,10 @@ class app {
     constructor() {
         this.List = []
     }
-
     
+    start() {
+        
+    }
 }
+
+module.exports = app
